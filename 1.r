@@ -1,4 +1,4 @@
-# Load necessary libraries
+# Load necessary library
 library(plotly)
 
 # Function to create a half gauge chart
@@ -49,11 +49,8 @@ create_half_gauge <- function(value, max_value = 100, title = "Half Gauge Chart"
   return(p)
 }
 
-# Create the gauge plot
+# Example usage
 gauge_plot <- create_half_gauge(value = 75, max_value = 100, title = "Half Gauge Example")
-
-# Remove Plotly logo by configuring the chart
-gauge_plot <- config(gauge_plot, displayModeBar = FALSE)
 
 # Display the half gauge chart
 gauge_plot
